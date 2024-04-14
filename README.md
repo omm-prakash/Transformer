@@ -4,6 +4,7 @@ This repository contains an implementation of a simplified version of the Transf
 ## Overview
 
 The Transformer model architecture has become a cornerstone in various NLP applications, including machine translation, text summarization, and language understanding tasks. This implementation aims to provide a clear and concise version of the Transformer model, making it accessible for educational purposes and experimentation.
+The code uses the `Hogging Face` tokenizer for token creation. 
 
 ### Features
 1. **Self-Attention Mechanism**: The core of the Transformer model, self-attention allows the model to weigh the importance of different input tokens dynamically.
