@@ -1,0 +1,28 @@
+# dataset configurations
+dataset_name: 'opus_books'
+dataset_config_name: 'en-fr'
+tokenizer_file: 'tokenizer_{lang}.json'
+data_path: './data'
+src_lang: 'en'
+tgt_lang: 'fr'
+dataset_split_ratio: 0.9
+model_basename: 'tmodel_'
+
+# model architecture configurations
+N: 6 
+d_model: 512
+head: 8 
+d_ff: 2048 
+dropout: 0.1
+
+# training configurations
+batch_size: 1 #256
+lr: 0.0001
+epochs: 7
+label_smoothing: 0.1
+model_folder: 'weights'
+model_basename": "tmodel_"
+preload: 'latest' # either "latest" or specifie the epoch
+validation_step_while_training: true
+validation_step_frequency: 3
+
